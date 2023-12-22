@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh Choudhary's Personal portfolio website</title>
+    
+    <!-- -----------css file ----------- -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- -------------Home------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>M</span>ahesh.</a>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi I'm <span> Mahesh </span> <br> Choudhary from Bharat</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------About------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMG-20200212-WA0005.jpg" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am completed Master of computer Applications From National Institute Of Technolohy
+                        Jamshedpur. I believe To work with an organization where I can apply and utilize my knowledge
+                        and skills which would enable me as a fresher to grow while fulfilling organization goals. In
+                        addition personal growth by the means of handling new tasks and gaining experience is also one
+                        of my focus in my work.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python/MySQL</span><br>Software Development</li>
+                            <li><span>HTML/CSS/JavaScript</span><br>Web app Development</li>
+                            <li><span>Data Structures</span><br>Programing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aug 2020 to Dec 2020</span><br>Data Structures & Algorithms in Python at Coding
+                                Ninjas</li>
+                            <li><span>June2022 to Dec 2022</span><br>Web Development at Spring Edge</li>
+                            <li><span>Data Structures</span><br>Programing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2022</span><br>MCA from National Institute of Technology, Jamshedpur</li>
+                            <li><span>2015-2018</span><br>BCA from University of Rajasthan, Jaipur</li>
+                            <li><span>2013-2014</span><br>12th from Nav Jyoti School Jaipur </li>
+                            <li><span>2011-2012</span><br>10th from Nav Jyoti School Jaipur </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------Services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">MyServices</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eexpedita dolorum earum nam facilis
+                        eligendi, ad quibusdam reiciendis vitae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eexpedita dolorum earum nam facilis
+                        eligendi, ad quibusdam reiciendis vitae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Software Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eexpedita dolorum earum nam facilis
+                        eligendi, ad quibusdam reiciendis vitae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../assets/Restaurant Website menu .png" alt="">
+                    <div class="layer">
+                        <h3>Restaurant_Website</h3>
+                        <p> I am create the restaurant website that help the people that can order food through online.
+                       </p>
+                        <a href="https://github.com/Maheshchoudhary83/Restaurant_Website" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../assets/tiles2048.png" alt="">
+                    <div class="layer">
+                        <h3>2048 Game</h3>
+                        <p>2048 is a tile-shifting game where players start with two tiles, each
+                            start with the number 2 and combine them to create a tile with the sum of the
+                            two tiles.</p>
+                        <a href="https://github.com/Maheshchoudhary83/2048Game" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../assets/VinGo Player.jpg" alt="">
+                    <div class="layer">
+                        <h3>VinGo Player</h3>
+                        <p> A web application for maintaining different web pages with common
+                            features. Each and every web page contains music sound..</p>
+                        <a href="https://github.com/Maheshchoudhary83/VinGo-Player-" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------Contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+
+                    <p><i class="fas fa-user"></i>Mahesh Choudhary</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Jaipur Rajasthan</p>
+                    <p><i class="fa-solid fa-envelope"></i>choudharymahesh498@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>+917689951833</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100010104575309"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mahesh_choudhary0611/"><i
+                                class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://twitter.com/mahesh_choudhar">
+                            <i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mahesh-choudhary-18b49a1b1/">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="../assets/Mahesh_Choudhary_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Created by Mahesh Choudhary</p>
+        </div>
+    </div>
+
+    <!-- -----------JavaScript file----------- -->
+    <script src="script.js">    </script>
+
+</body>
+
+</html>
